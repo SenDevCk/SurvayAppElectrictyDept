@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.bih.nic.bsphcl.activities.SplashActivity">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg" />
+    <TextView
+        android:id="@+id/text_head_sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp"
+        android:padding="20dp"
+        android:textSize="30sp"
+        android:textColor="#ffffff"
+        android:text="Survay App"/>
+
+    <ProgressBar
+        android:id="@+id/p_bar"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true"
+        android:progressTint="@android:color/holo_red_light" />
+    <TextView
+        android:id="@+id/text_imei"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/p_bar"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:padding="10dp"
+        android:textSize="17sp"
+        android:textColor="@android:color/holo_red_light"
+        android:text="Loading..."/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:background="@color/colorPrimaryDark"
+        android:text="Services provided by: NIC Bihar"
+        android:textColor="@android:color/white" />
+</RelativeLayout>
